@@ -15,6 +15,35 @@ namespace Cetverokuti
              * za razne primjene gdje je potreban popis cetverokuta
              */
 
+            //Prvi cetverokut(3, 4), Drugi(5, 5)
+
+            //Cetverokut sa dva para razlicitih stranica
+            int prvia = 3;
+            int prvib = 4;
+
+            //Ispitivanje dali ima razlicite ili jednake stranice
+            if (prvia != prvib)
+            {
+                Console.WriteLine("Cetverokut ima razlicite stranice i sigurno nije kvadrat. Povrsina je: " + (prvia * prvib));
+            }
+            else
+            {
+                Console.WriteLine("Cetverokut ima jednake stranice i sigurno nije pravokutnik. Povrsina: " + (prvia * prvia));
+            }
+
+
+                //Cetverokut sa svim stranicama jednake duljine
+            int drugia = 5;
+            int drugib = 5;
+
+            if (drugia != drugib)
+            {
+                Console.WriteLine("Cetverokut ima razlicite stranice i sigurno nije kvadrat. Povrsina je: " + (drugia * drugib));
+            }
+            else
+            {
+                Console.WriteLine("Cetverokut ima jednake stranice i sigurno nije pravokutnik. Povrsina: " + (drugia*drugib));
+            }
 
 
             /*
