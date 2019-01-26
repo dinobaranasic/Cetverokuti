@@ -44,8 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cetverokut.cs" />
+    <Compile Include="Kvadrat.cs" />
+    <Compile Include="Pravokutnik.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Romb.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -11,7 +11,7 @@ namespace Cetverokuti
         //Sakrivanje podataka,onemugucanje pristupa
         private string Vrsta;
         private int DuzinaA;
-        private int DuzinaB;
+        //private int DuzinaB;
 
         // Izraditi razred tako da ...
         // Sadrži konstruktor kojim se postavljaju podaci, 
@@ -26,11 +26,10 @@ namespace Cetverokuti
         */
 
         //Konstruktor koji prima 3 parametra(Vrsta, DuzinaA, DuzinaB)
-        public Cetverokut(string Vrsta, int DuzinaA, int DuzinaB)
+        public Cetverokut(string Vrsta, int DuzinaA)
         {
             this.Vrsta = Vrsta;
             this.DuzinaA = DuzinaA;
-            this.DuzinaB = DuzinaB;
         }
 
         //Svojstvo Vrsta
@@ -68,7 +67,7 @@ namespace Cetverokuti
         public int duzinaA { get => DuzinaA; set => DuzinaA = value; }
 
         //Svojstvo DuzinaB
-        public int duzinaB { get => DuzinaB; set => DuzinaB = value; }
+        //public int duzinaB { get => DuzinaB; set => DuzinaB = value; }
 
         //Metoda za postavljanje podataka "Vrsta"
         public void PostaviVrstu(string Vrsta)
@@ -95,21 +94,21 @@ namespace Cetverokuti
         }
 
         //Metoda za postavljanje podataka "DuzinaB"
-        public void PostaviDuzinaB(int DuzinaB)
-        {
-            this.DuzinaB = DuzinaB;
-        }
+        //public void PostaviDuzinaB(int DuzinaB)
+        //{
+        //    this.DuzinaB = DuzinaB;
+        //}
 
-        //Metoda za dohvat podataka "DuzinaB"
-        public int DohvatiDuzinaB()
-        {
-            return DuzinaB;
-        }
+        ////Metoda za dohvat podataka "DuzinaB"
+        //public int DohvatiDuzinaB()
+        //{
+        //    return DuzinaB;
+        //}
 
         //Metoda za ispis podatak "Vrsta, DuzinaA, DuzinaB"
-        public void ispisVrstaDuzinaADuzinaB()
+        public void ispisVrstaDuzinaA()
         {
-            Console.WriteLine("Vrsta cetverokuta: {0}, Duzina stranice a: {1}, Duzina stranice b: {2}", Vrsta, DuzinaA, DuzinaB);
+            Console.WriteLine("Vrsta cetverokuta: {0}, Duzina stranice a: {1}", Vrsta, DuzinaA);
         }
 
     }

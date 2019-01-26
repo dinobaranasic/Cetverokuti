@@ -36,17 +36,24 @@ namespace Cetverokuti
             //c3.duzinaB = 3;
             //c3.ispisVrstaDuzinaADuzinaB();
 
-            Cetverokut c1 = new Cetverokut("Pravokutnik", 3, 4);
-            c1.ispisVrstaDuzinaADuzinaB();
-            Cetverokut c2 = new Cetverokut("Kvadrat", 5, 5);
-            c2.ispisVrstaDuzinaADuzinaB();
-            Cetverokut c3 = new Cetverokut("Romb", 3, 3);
-            c3.ispisVrstaDuzinaADuzinaB();
+            //Cetverokut c1 = new Cetverokut("Pravokutnik", 3, 4);
+            //c1.ispisVrstaDuzinaADuzinaB();
+            //Cetverokut c2 = new Cetverokut("Kvadrat", 5, 5);
+            //c2.ispisVrstaDuzinaADuzinaB();
+            //Cetverokut c3 = new Cetverokut("Romb", 3, 3);
+            //c3.ispisVrstaDuzinaADuzinaB();
+
+            //Upisuje se pomocu konstruktora Vrsta i DuzinaA + DuzinaB
+            Pravokutnik p1 = new Pravokutnik("Pravokutnik", 3, 4);
+            //Upisuje se pomocu konstruktora Vrsta i DuzinaA(isti kao i bazni konstruktor)
+            Kvadrat k1 = new Kvadrat("Kvadrat", 5);
+            //Upisuje se pomocu konstruktora Vrsta i DuzinaA + kut Alfa
+            Romb r1 = new Romb("Romb", 3, 60);
 
             List<Cetverokut> cetverokuti = new List<Cetverokut>();
-            cetverokuti.Add(c1);
-            cetverokuti.Add(c2);
-            cetverokuti.Add(c3);
+            cetverokuti.Add(p1);
+            cetverokuti.Add(k1);
+            cetverokuti.Add(r1);
 
         }
     }
