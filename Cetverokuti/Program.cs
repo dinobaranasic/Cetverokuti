@@ -21,7 +21,7 @@ namespace Cetverokuti
             c1.DuzinaB = 4;
 
             Cetverokut c2 = new Cetverokut();
-            c2.Vrsta = "Pravokutnik";
+            c2.Vrsta = "Kvadrat";
             c2.DuzinaA = 5;
             c2.DuzinaB = 5;
 
