@@ -32,7 +32,7 @@ namespace Cetverokuti
             }
 
 
-                //Cetverokut sa svim stranicama jednake duljine
+            //Cetverokut sa svim stranicama jednake duljine
             int drugia = 5;
             int drugib = 5;
 
@@ -42,7 +42,7 @@ namespace Cetverokuti
             }
             else
             {
-                Console.WriteLine("Cetverokut ima jednake stranice i sigurno nije pravokutnik. Povrsina: " + (drugia*drugib));
+                Console.WriteLine("Cetverokut ima jednake stranice i sigurno nije pravokutnik. Povrsina: " + (drugia * drugib));
             }
 
 
@@ -53,6 +53,23 @@ namespace Cetverokuti
              * tj. posla koji on mora odraditi? 
              * Kolika je skalabilnost? 
              */
+
+            /*
+             * Što nije dobro?
+             * We Enjoy Typing? Write Everytinh Twice? Waste Everyone's Time? WET! 
+             * We have a WET solution.
+             * DRY -> Don't Repeat Yourself (The Pragmatic Programmer)
+             */
+
+            string[] vrstacetverokuta = { "Pravokutnik", "Kvadrat"};
+            int[] duzinastraniceA = { 3, 5};
+            int[] duzinastraniceB = { 4, 5};
+            Console.WriteLine("Popis osoba:");
+            for (int i = 0; i < vrstacetverokuta.Length; i++)
+            {
+                Console.WriteLine("{0}.Vrsta cetverokuta:{1},Duzina stranice a:{2},Duzina stranice b:{3}", i, vrstacetverokuta[i], duzinastraniceA[i], duzinastraniceB[i]);
+            
+            }
         }
     }
 }
