@@ -45,10 +45,15 @@ namespace Cetverokuti
 
             //Upisuje se pomocu konstruktora Vrsta i DuzinaA + DuzinaB
             Pravokutnik p1 = new Pravokutnik("Pravokutnik", 3, 4);
+            p1.IzracunajPovrsinu();
+
             //Upisuje se pomocu konstruktora Vrsta i DuzinaA(isti kao i bazni konstruktor)
             Kvadrat k1 = new Kvadrat("Kvadrat", 5);
+            k1.IzracunajPovrsinu();
+
             //Upisuje se pomocu konstruktora Vrsta i DuzinaA + kut Alfa
             Romb r1 = new Romb("Romb", 3, 60);
+            r1.IzracunajPovrsinu();
 
             List<Cetverokut> cetverokuti = new List<Cetverokut>();
             cetverokuti.Add(p1);

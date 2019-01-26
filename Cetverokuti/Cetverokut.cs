@@ -9,8 +9,8 @@ namespace Cetverokuti
     class Cetverokut
     {
         //Sakrivanje podataka,onemugucanje pristupa
-        private string Vrsta;
-        private int DuzinaA;
+        protected string Vrsta;
+        protected int DuzinaA;
         //private int DuzinaB;
 
         // Izraditi razred tako da ...
@@ -105,11 +105,18 @@ namespace Cetverokuti
         //    return DuzinaB;
         //}
 
-        //Metoda za ispis podatak "Vrsta, DuzinaA, DuzinaB"
-        public void ispisVrstaDuzinaA()
+        //Metoda za ispis podatak "Vrsta"
+        public void ispisVrsta()
         {
-            Console.WriteLine("Vrsta cetverokuta: {0}, Duzina stranice a: {1}", Vrsta, DuzinaA);
+            Console.WriteLine("Vrsta cetverokuta: {0}", Vrsta);
         }
+
+        //Abstract metoda tjera programera da izradi svoju metodu u nasljedenim razredima
+        public virtual string IzracunajPovrsinu()
+        {
+            return "Nemoze se izracunati povrsina ako neznamo koji je cetverokut u pitanju!";
+        }
+
 
     }
 }

@@ -18,5 +18,11 @@ namespace Cetverokuti
         {
             this.StupnjeviKutaAlfa = StupnjeviKutaAlfa;
         }
+
+        public override string IzracunajPovrsinu()
+        {
+            double visina = DuzinaA * Math.Sin(StupnjeviKutaAlfa);
+            return "Povrsina Romba je:" + (DuzinaA * visina);
+        }
     }
 }

@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace Cetverokuti
 {
-    class Kvadrat: Cetverokut
+    class Kvadrat : Cetverokut
     {
         public Kvadrat(string Vrsta, int DuzinaA) : base(Vrsta, DuzinaA)
         {
             //napisani konstruktor koji prima dva parametra isto kao i u baznom razredu
         }
-        
+
+        public override string IzracunajPovrsinu()
+        {
+            return "Povrsina Kvadrata je:" + (DuzinaA*DuzinaA);
+        }
     }
 }
