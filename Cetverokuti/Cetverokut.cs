@@ -13,6 +13,26 @@ namespace Cetverokuti
         private int DuzinaA;
         private int DuzinaB;
 
+        // Izraditi razred tako da ...
+        // Sadrži konstruktor kojim se postavljaju podaci, 
+        // onemogućiti stvaranje objekta bez podataka.
+        /*
+        public Cetverokut()
+        {
+            // Onemogućavanje stvaranja objekta bez podataka -->
+            // izostaviti podrazumijevani konstruktor iz koda 
+            //  i izraditi drugi(e) konstruktore
+        }
+        */
+
+        //Konstruktor koji prima 3 parametra(Vrsta, DuzinaA, DuzinaB)
+        public Cetverokut(string Vrsta, int DuzinaA, int DuzinaB)
+        {
+            this.Vrsta = Vrsta;
+            this.DuzinaA = DuzinaA;
+            this.DuzinaB = DuzinaB;
+        }
+
         //Svojstvo Vrsta
         public string vrsta
         {
