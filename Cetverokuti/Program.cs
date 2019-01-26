@@ -27,9 +27,16 @@ namespace Cetverokuti
             c2.PostaviDuzinaB(5);
             c2.ispisVrstaDuzinaADuzinaB();
 
+            Cetverokut c3 = new Cetverokut();
+            c3.vrsta = "Romb";
+            c3.duzinaA = 3;
+            c3.duzinaB = 3;
+            c3.ispisVrstaDuzinaADuzinaB();
+
             List<Cetverokut> cetverokuti = new List<Cetverokut>();
             cetverokuti.Add(c1);
             cetverokuti.Add(c2);
+            cetverokuti.Add(c3);
 
         }
     }

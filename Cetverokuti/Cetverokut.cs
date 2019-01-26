@@ -13,6 +13,43 @@ namespace Cetverokuti
         private int DuzinaA;
         private int DuzinaB;
 
+        //Svojstvo Vrsta
+        public string vrsta
+        {
+            get
+            {
+                return Vrsta;
+            }
+
+            set
+            {
+                Vrsta = value;
+            }
+        }
+
+        //Svojstvo marka moze pisati i na nacin:
+        //public string vrsta { get => Vrsta; set => Vrsta = value; }
+
+        //Svojstvo DuzinaA
+        //public int duzinaA
+        //{
+        //    get
+        //    {
+        //        return DuzinaA;
+        //    }
+
+        //    set
+        //    {
+        //        DuzinaA = value;
+        //    }
+        //}
+
+        //Svojstvo DuzinaA moze pisati i na nacin:
+        public int duzinaA { get => DuzinaA; set => DuzinaA = value; }
+
+        //Svojstvo DuzinaB
+        public int duzinaB { get => DuzinaB; set => DuzinaB = value; }
+
         //Metoda za postavljanje podataka "Vrsta"
         public void PostaviVrstu(string Vrsta)
         {
